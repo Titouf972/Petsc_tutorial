@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.28)
 
-set (CMAKE_CXX_COMPILER  "/usr/local/Cellar/gcc/14.2.0_1/bin/g++-14")
+set (CMAKE_CXX_COMPILER  "/usr/local/Cellar/gcc/15.1.0/bin/g++-15")
 set(CMAKE_CXX_COMPILER_ID "GNU")
     set(CMAKE_CXX_STANDARD 17)
 
