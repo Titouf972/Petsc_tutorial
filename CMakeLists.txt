@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.28)
 
-set (CMAKE_CXX_COMPILER  "/usr/local/Cellar/gcc/15.1.0/bin/g++-15")
+set (CMAKE_CXX_COMPILER  "/usr/local/bin/g++")
+set(CMAKE_C_COMPILER "/usr/local/bin/gcc-15")
 set(CMAKE_CXX_COMPILER_ID "GNU")
     set(CMAKE_CXX_STANDARD 17)
 
@@ -13,6 +14,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
              ${CMAKE_COMPILER_IS_GNUCXX}")
    endif()
 project(Petsc_Tutorial)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include(FindPkgConfig REQUIRED)
 
 set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
