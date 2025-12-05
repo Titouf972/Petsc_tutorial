@@ -136,7 +136,7 @@ int main (int argc, char** argv){
   PetscCall(KSPGetIterationNumber(linSolver, &its));
   PetscCall(PetscPrintf(PETSC_COMM_WORLD, "Iterations number : %d \n", its));
 
-  PetscScalar rnorm;
+  //PetscScalar rnorm;
   PetscCall(KSPGetResidualNorm(linSolver, &rnorm));
   PetscCall(PetscPrintf(PETSC_COMM_WORLD, "Residual norm : %g \n", rnorm));
 
