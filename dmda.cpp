@@ -39,7 +39,7 @@ int main (int argc, char** argv){
   hy2 = 1. / ((info.mx - 1) * (info.mx - 1));
 
   coef = 1.;
-  coef5[0] = 2. / hx2 + 2. / hy2;
+  coef5[0] = 2. / hx2 + 2. / hy2; //on peut avoir des pas différents en x et en y
 
   coef5[1] = -1. / hx2 ;
   coef5[2] = -1. / hx2;
